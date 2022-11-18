@@ -1,0 +1,41 @@
+header{
+    height: 80px;
+    background: #5780d0;
+    display: flex;
+}
+header .web-icon{
+    width: 350px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 2em;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    left: 15%;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+header .web-icon:hover{
+    letter-spacing: 4px;
+    color: #dff9fb;
+}
+header div{
+    width: 30%;
+    height: 80px;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+header div .header-item{
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-family: Rubik, sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+
+}

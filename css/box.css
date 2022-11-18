@@ -1,0 +1,95 @@
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.box h2{
+    margin: 0 0 40px;
+    padding: 0;
+    color: #f7497d;
+    font-family: Rubik, sans-serif;
+}
+
+.box input{
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-family: Rubik, sans-serif;
+}
+
+.box textarea{
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+.box input,.box textarea
+{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+}
+
+.box textarea{
+    margin-bottom: 20px;
+}
+
+.box input[type="submit"]{
+    border-bottom: none;
+    cursor: pointer;
+    background: #f7497d;
+    color: #fff;
+    margin-bottom: 0;
+    font-family: Rubik, sans-serif;
+    transition: 0.5s ease-in-out all;
+}
+
+.box input[type="submit"]:hover{
+    background: #dff9fb;
+    border-bottom: 2px solid #dff9fb;
+    color: #2c3e50;
+}
+
+
+.box form div{
+    position: relative;
+}
+
+.box form div label{
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    left: 0;
+    color: #999;
+    transition: 0.5s;
+    font-family: Rubik, sans-serif;
+}
+
+.box input:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box textarea:valid ~ label{
+    top: -12px;
+    left: 0;
+    color: #f7497d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid{
+    border-bottom: 2px solid #f7497d;
+}
